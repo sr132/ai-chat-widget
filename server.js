@@ -16,7 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve up the website files from your public subfolder
-app.use(express.static('public'));
+app.use(express.static('.'));
 
 app.post('/api/chat', async (req, res) => {
   try {
