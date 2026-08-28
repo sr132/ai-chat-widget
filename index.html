@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Study Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="chat-container">
+    <div class="chat-header">
+      <div class="status-dot"></div>
+      <h1>AI Study Assistant</h1>
+    </div>
+
+    <div class="chat-window" id="chatWindow">
+      <!-- message bubbles get inserted here by script.js -->
+      <div class="bubble bot">
+        Hi! Ask me anything and I'll help you study.
+      </div>
+    </div>
+
+    <div class="typing-indicator" id="typingIndicator" style="display:none;">
+      <span></span><span></span><span></span>
+    </div>
+
+    <form class="input-area" id="chatForm">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Type your message..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
